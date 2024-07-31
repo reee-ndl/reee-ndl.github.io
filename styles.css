@@ -4,8 +4,8 @@ body {
 }
 
 .container {
-    max-width: 400px; /* Set max-width to make the container compact */
-    margin: auto; /* Center the container */
+    max-width: 500px; 
+    margin: auto;
 }
 
 .user-icon {
@@ -17,7 +17,7 @@ body {
 }
 
 .card {
-    border: none; /* Remove card border */
+    border: none; 
     
 }
 
@@ -69,21 +69,22 @@ body {
 }
 
 .card-body {
-    padding: 10px 20px; /* Adjust padding to make it compact */
+    padding: 10px 20px; 
 }
 
 .social-media a {
-    margin: 5px; /* Reduce margin for compactness */
+    margin: 5px; 
     width: 70px;
     height: 70px;
 }
 
-
 .btn-link {
     text-decoration: none;
-    color: #000; /* Change color to black to match the image */
-    font-size: 16px; /* Slightly reduce font size */
+    color: #000; 
+    font-size: 17px; 
 }
+
+
 .btn-link:hover{
     background-color: #004DC2;
     color: #F9EC00;;
@@ -92,17 +93,17 @@ body {
 }
 
 .btn-link i {
-    margin-right: 10px; /* Add space between icon and text */
+    margin-right: 20px; 
 }
 
 .btn-circle {
-    width: 45px; /* Adjust width */
-    height: 45px; /* Adjust height */
-    padding: 10px; /* Adjust padding */
+    width: 45px; 
+    height: 45px; 
+    padding: 10px;
     border-radius: 50%;
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px; 
     text-align: center;
-    line-height: 24px; /* Adjust line height for better alignment */
+    line-height: 24px; 
 }
 
 .btn-circle i {
@@ -111,7 +112,7 @@ body {
 
 .contact-info a {
     display: block;
-    margin: 10px 0; /* Add margin for spacing */
+    margin: 8px 0; /* Add margin for spacing */
     text-align: left;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
