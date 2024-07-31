@@ -1,0 +1,101 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 400px; /* Set max-width to make the container compact */
+    margin: auto; /* Center the container */
+}
+
+.user-icon {
+    margin-bottom: 15px;
+}
+.rounded-circle{
+    width: 120px;
+    height: 120px;
+}
+
+.card {
+    border: none; /* Remove card border */
+    
+}
+
+.card-header {
+    padding: 20px;
+    position: relative;
+    background-color: #004DC2;
+}
+
+.card-body {
+    padding: 10px 20px; /* Adjust padding to make it compact */
+}
+
+.social-media a {
+    margin: 5px; /* Reduce margin for compactness */
+    width: 70px;
+    height: 70px;
+}
+
+
+.btn-link {
+    text-decoration: none;
+    color: #000; /* Change color to black to match the image */
+    font-size: 16px; /* Slightly reduce font size */
+}
+.btn-link:hover{
+    background-color: #004DC2;
+    color: #F9EC00;;
+    text-decoration: none;
+
+}
+
+.btn-link i {
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+.btn-circle {
+    width: 45px; /* Adjust width */
+    height: 45px; /* Adjust height */
+    padding: 10px; /* Adjust padding */
+    border-radius: 50%;
+    font-size: 18px; /* Adjust font size */
+    text-align: center;
+    line-height: 24px; /* Adjust line height for better alignment */
+}
+
+.btn-circle i {
+    vertical-align: middle; /* Center the icon vertically */
+}
+
+.contact-info a {
+    display: block;
+    margin: 10px 0; /* Add margin for spacing */
+    text-align: left;
+}
+
+.text-white {
+    color: #fff; /* Ensure text color is white */
+}
+
+.hr-separator {
+    width: 100%;
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.social-icon {
+    width: 100%; /* Make social icons fit within the circle */
+    height: auto;
+    border-radius: 50%; /* Ensure icons are circular */
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    font-size: 24px;
+    line-height: 30px;
+}
