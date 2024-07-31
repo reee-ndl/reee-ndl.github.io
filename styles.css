@@ -1,3 +1,4 @@
+
 body {
     background-color: #f8f9fa;
 }
@@ -24,6 +25,47 @@ body {
     padding: 20px;
     position: relative;
     background-color: #004DC2;
+    
+}
+
+.h5{
+    font-family: 'Lucidity';
+    src: local('Lucidity Expand'), local('Lucidity-Expand'),
+        url('Lucidity-Expand.woff2') format('woff2'),
+        url('Lucidity-Expand.woff') format('woff'),
+        url('Lucidity-Expand.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+.h6{
+    font-family: 'Lucidity';
+    src: local('Lucidity Expand'), local('Lucidity-Expand'),
+        url('Lucidity-Expand.woff2') format('woff2'),
+        url('Lucidity-Expand.woff') format('woff'),
+        url('Lucidity-Expand.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.h7{
+    font-family: 'Lucidity';
+    src: local('Lucidity Expand'), local('Lucidity-Expand'),
+        url('Lucidity-Expand.woff2') format('woff2'),
+        url('Lucidity-Expand.woff') format('woff'),
+        url('Lucidity-Expand.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.p1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    font-variation-settings: "wdth" 75;
+    color: #fff;
+    margin: 0;
 }
 
 .card-body {
@@ -71,6 +113,12 @@ body {
     display: block;
     margin: 10px 0; /* Add margin for spacing */
     text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 75;
 }
 
 .text-white {
