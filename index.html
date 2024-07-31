@@ -93,7 +93,7 @@ END:VCARD`;
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'contact.vcf';
+            a.download = 'servpro_contact.vcf';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
