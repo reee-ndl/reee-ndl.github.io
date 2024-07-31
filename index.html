@@ -76,7 +76,7 @@
         </div>
     </div>
 
-    <button id="add-contact" class="btn btn-warning btn-circle floating-btn"><i class="fas fa-user-plus"></i></button>
+<button id="add-contact" class="btn btn-warning btn-circle floating-btn"><i class="fas fa-user-plus"></i></button>
 
     <script>
         document.getElementById('add-contact').addEventListener('click', function() {
@@ -93,7 +93,7 @@ END:VCARD`;
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'servpro_contact.vcf';
+            a.download = 'contact.vcf';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
