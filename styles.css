@@ -43,6 +43,7 @@ body {
         url('Lucidity-Expand.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-size: 25px;
 }
 
 .h7{
@@ -53,6 +54,8 @@ body {
         url('Lucidity-Expand.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-size: 20px;
+    
 }
 
 .p1 {
@@ -73,6 +76,7 @@ body {
     margin: 5px; 
     width: 70px;
     height: 70px;
+    
 }
 
 .btn-link {
@@ -133,6 +137,7 @@ body {
     width: 100%; 
     height: auto;
     border-radius: 50%; 
+    
 }
 
 .floating-btn {
