@@ -71,7 +71,24 @@
 
     <script>
         document.getElementById('add-contact').addEventListener('click', function() {
-            alert('Functionality to add contact to phone is not supported in this demo.');
+            const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:SERVPROPH
+ORG:SERVPRO CONSOLIDATED INC.
+TEL;TYPE=WORK,VOICE:09171547753
+TEL;TYPE=WORK,VOICE:(046) 430-2694
+EMAIL:servproph.airconditioning@gmail.com
+END:VCARD`;
+
+            const blob = new Blob([vCardData], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'contact.vcf';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         });
     </script>
 </body>
