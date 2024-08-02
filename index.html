@@ -92,15 +92,20 @@ EMAIL:servproph.airconditioning@gmail.com
 END:VCARD`;
 
             const blob = new Blob([vCardData], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'servpro_contact.vcf';
-            a.style.display = 'none';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+
+            if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                // For IE
+                window.navigator.msSaveOrOpenBlob(blob, 'contact.vcf');
+            } else {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'servpro_contact.vcf';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
         });
     </script>
     </div>
