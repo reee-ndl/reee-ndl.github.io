@@ -94,7 +94,7 @@
                 const blob = new Blob([vCardData], { type: 'text/vcard' });
                 if (window.navigator.msSaveOrOpenBlob) {
                     // For IE browser
-                    window.navigator.msSaveOrOpenBlob(blob, 'contact.vcf');
+                    window.navigator.msSaveOrOpenBlob(blob, 'servpro_contact.vcf');
                 } else {
                     const link = document.createElement('a');
                     link.href = URL.createObjectURL(blob);
