@@ -1,5 +1,6 @@
 body {
     background-color: #f8f9fa;
+    
 }
 
 .container {
@@ -25,6 +26,7 @@ body {
     position: relative;
     background-color: #004DC2;
     max-height: 340px;
+    
 }
 
 .h5{
@@ -68,7 +70,6 @@ body {
     color: #fff;
     margin: 0;
 }
-
 .p2 {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -113,6 +114,24 @@ body {
     font-size: 18px; 
     text-align: center;
     line-height: 24px; 
+    background-color: #F9EC00;
+    color:#004DC2;
+}
+
+.btn-circle:hover {
+    background-color: #fff;
+}
+
+.btn-circle2 {
+    width: 45px; 
+    height: 45px; 
+    padding: 0px;
+    border-radius: 50%;
+    font-size: 18px; 
+    text-align: center;
+    line-height: 24px; 
+    
+  
 }
 
 .btn-circle i {
@@ -161,3 +180,4 @@ body {
     font-size: 24px;
     line-height: 30px;
 }
+
