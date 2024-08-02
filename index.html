@@ -80,9 +80,9 @@
     
     <button id="add-contact" class="btn btn-warning btn-circle floating-btn"><i class="fas fa-user-plus"></i></button>
 
-    <script>
-        document.getElementById('add-contact').addEventListener('click', function() {
-            const vCardData = `BEGIN:VCARD
+<script>
+    document.getElementById('add-contact').addEventListener('click', function() {
+        const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:SERVPROPH
 ORG:SERVPRO CONSOLIDATED INC.
@@ -91,23 +91,35 @@ TEL;TYPE=phone,VOICE:(046) 430-2694
 EMAIL:servproph.airconditioning@gmail.com
 END:VCARD`;
 
-            const blob = new Blob([vCardData], { type: 'text/vcard' });
+        const blob = new Blob([vCardData], { type: 'text/vcard' });
 
-            if (window.navigator && window.navigator.msSaveOrOpenBlob) {
-                // For IE
-                window.navigator.msSaveOrOpenBlob(blob, 'contact.vcf');
-            } else {
-                const url = URL.createObjectURL(blob);
+        // Safari has issues with URL.createObjectURL and Blob in some cases
+        if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+            // Safari-specific code
+            const reader = new FileReader();
+            reader.onloadend = function() {
                 const a = document.createElement('a');
-                a.href = url;
-                a.download = 'servpro_contact.vcf';
+                a.href = reader.result;
+                a.download = 'contact.vcf';
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            }
-        });
-    </script>
+            };
+            reader.readAsDataURL(blob);
+        } else {
+            // Other browsers
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'servpro_contact.vcf';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    });
+</script>
+
     </div>
 </body>
 </html>
