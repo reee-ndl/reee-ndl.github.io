@@ -77,23 +77,35 @@
             </div>
         </div>
     
-    <button id="add-contact" class="btn btn-warning btn-circle floating-btn"><i class="fas fa-user-plus"></i></button>
+       <button id="add-contact" class="btn btn-warning btn-circle floating-btn"><i class="fas fa-user-plus"></i></button>
 
-    <script>
-        document.getElementById('add-contact').addEventListener('click', function() {
-            const vCardData = `BEGIN:VCARD
-VERSION:3.0
-FN:SERVPROPH
-ORG:SERVPRO CONSOLIDATED INC.
-TEL;TYPE=WORK,VOICE:09171547753
-TEL;TYPE=WORK,VOICE:(046) 430-2694
-EMAIL:servproph.airconditioning@gmail.com
-END:VCARD`;
-
-            const blob = new Blob([vCardData], { type: 'text/vcard' });
-            saveAs(blob, 'servpro_contact.vcf');
-        });
-    </script>
+        <script>
+            document.getElementById('add-contact').addEventListener('click', function() {
+                const vCardData = `BEGIN:VCARD
+    VERSION:3.0
+    FN:SERVPROPH
+    ORG:SERVPRO CONSOLIDATED INC.
+    TEL;TYPE=WORK,VOICE:09171547753
+    TEL;TYPE=WORK,VOICE:(046) 430-2694
+    EMAIL:servproph.airconditioning@gmail.com
+    END:VCARD`;
+    
+                const blob = new Blob([vCardData], { type: 'text/vcard' });
+                if (window.navigator.msSaveOrOpenBlob) {
+                    // For IE browser
+                    window.navigator.msSaveOrOpenBlob(blob, 'contact.vcf');
+                } else {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = 'servepro_contact.vcf';
+                    link.style.display = 'none';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(link.href);
+                }
+            });
+        </script>
     </div>
 </body>
 </html>
