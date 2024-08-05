@@ -34,6 +34,14 @@ body {
     max-height: 600px;
     
 }
+.card-foot {
+    padding: 12px 20px;
+    position: relative;
+    background-color: #004DC2;
+    size: 100px;
+    
+    
+}
 
 .h5{
     padding: 0;
@@ -46,11 +54,6 @@ body {
 
 
 
-
-.img1{
-    width: auto;
-    height: auto;
-}
 
 .h7{
     font-family: 'Open San', sans-serif;
