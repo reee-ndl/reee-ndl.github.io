@@ -9,6 +9,7 @@ body {
 .container {
     max-width: 500px; 
     margin: auto;
+    width: auto;
 }
 
 .user-icon {
@@ -22,7 +23,6 @@ body {
 
 .card {
     border: none;
-    padding: auto;
 }
 
 .card-header {
