@@ -21,7 +21,8 @@ body {
 }
 
 .card {
-    border: none; 
+    border: none;
+    padding: auto;
 }
 
 .card-header {
