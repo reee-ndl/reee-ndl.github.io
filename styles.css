@@ -7,9 +7,10 @@ body {
 }
 
 .container {
-    max-width: 600px; 
+    max-width: 500px; 
     margin: auto;
     width: auto;
+    font-optical-sizing: auto;
 }
 
 .user-icon {
@@ -22,14 +23,15 @@ body {
 }
 
 .card {
-    border: none;
+    border: none; 
+    padding: auto;
 }
 
 .card-header {
     padding: auto;
     position: relative;
     background-color: #004DC2;
-    max-height: 600;
+    max-height: 600px;
     
 }
 
@@ -43,22 +45,11 @@ body {
 }
 
 
-.h6-2{
-    padding: 0;
-    margin-bottom: 0px;
-    font-family: 'Monument Extended Ultralight';
-    font-weight:bold;
-    font-style: normal;
-    font-size: 45px;
-}
 
-.h6{
-   
-    margin-top: 0px;
-    font-family: 'Lucidity';
-    font-weight: bold;
-    font-style:normal;
-    font-size: 14px;
+
+.img1{
+    width: auto;
+    height: auto;
 }
 
 .h7{
@@ -177,6 +168,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-wrap: wrap;
 }
 
 .contact-info a {
