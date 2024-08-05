@@ -1,5 +1,8 @@
+@import url(https://db.onlinewebfonts.com/c/9b310b2d91dfaf3b73ac6ea66c8351b2?family=Monument+Extended+Ultralight);
+@import url("font/Lucidity/style.css");
+@import url('https://fonts.cdnfonts.com/css/gellatio-personal-use');
 body {
-    background-color: #f8f9fa;
+    background-color: #D9D9D9;
     
 }
 
@@ -30,54 +33,61 @@ body {
 }
 
 .h5{
-    font-family: 'Lucidity';
-    src: local('Lucidity Expand'), local('Lucidity-Expand'),
-        url('Lucidity-Expand.woff2') format('woff2'),
-        url('Lucidity-Expand.woff') format('woff'),
-        url('Lucidity-Expand.ttf') format('truetype');
-    font-weight: bold;
+    padding: 0;
+    margin-bottom: 0px;
+    font-family: 'Monument Extended Ultralight';
+    font-weight:bold;
     font-style: normal;
+    font-size: 20px;
 }
-.h6{
-    font-family: 'Lucidity';
-    src: local('Lucidity Expand'), local('Lucidity-Expand'),
-        url('Lucidity-Expand.woff2') format('woff2'),
-        url('Lucidity-Expand.woff') format('woff'),
-        url('Lucidity-Expand.ttf') format('truetype');
-    font-weight: bold;
+
+
+.h6-2{
+    padding: 0;
+    margin-bottom: 0px;
+    font-family: 'Monument Extended Ultralight';
+    font-weight:bold;
     font-style: normal;
-    font-size: 25px;
+    font-size: 45px;
+}
+
+.h6{
+   
+    margin-top: 0px;
+    font-family: 'Lucidity';
+    font-weight: bold;
+    font-style:normal;
+    font-size: 14px;
 }
 
 .h7{
-    font-family: 'Lucidity';
-    src: local('Lucidity Expand'), local('Lucidity-Expand'),
-        url('Lucidity-Expand.woff2') format('woff2'),
-        url('Lucidity-Expand.woff') format('woff'),
-        url('Lucidity-Expand.ttf') format('truetype');
+    font-family: 'Open San', sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
 .p1 {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: italic;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
     font-variation-settings: "wdth" 75;
     color: #fff;
     margin: 0;
 }
 .p2 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Gellatio Personal Use", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: italic;
+    font-weight: bold;
+    font-style: normal;
     font-variation-settings: "wdth" 75;
     color: #000000;
     margin: 0;
+    font-size: 15px;
+
 }
 
 .card-body {
@@ -116,6 +126,7 @@ body {
     line-height: 24px; 
     background-color: #F9EC00;
     color:#004DC2;
+   
 }
 
 .btn-circle:hover {
@@ -159,9 +170,7 @@ body {
     text-decoration: none;
     color: #000;
     font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    margin: 10;
-    padding: 10;
+    font-weight: bold;
 }
 
 .text-white {
