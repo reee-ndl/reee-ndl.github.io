@@ -28,7 +28,7 @@ body {
     padding: 20px;
     position: relative;
     background-color: #004DC2;
-    max-height: 340px;
+    max-height: 400px;
     
 }
 
@@ -87,6 +87,18 @@ body {
     color: #000000;
     margin: 0;
     font-size: 15px;
+    margin-top: 10px;
+
+}
+.p3 {
+    font-family: "Gellatio Personal Use", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 75;
+    color: light;
+    margin-top: 20px;
+    font-size: 30px;
 
 }
 
